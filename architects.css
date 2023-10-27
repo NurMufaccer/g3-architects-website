@@ -16,6 +16,7 @@
 	font-size: 1.25rem;
 	font-weight: 600;
 	padding: 20px 25px;
+	cursor: pointer;
 	
 }
 /* Header styles */
@@ -119,6 +120,7 @@ main{
 }
 .features-img img{
 	height: 90%;
+	margin-left: 90px;
 }
 .ten-years-badge{
 	width: 342px;
@@ -169,6 +171,38 @@ main{
 	margin-top: 10px;
 	margin-bottom: 0px;
 }
+/* sponsors styles */
+.sponsors{
+	margin-top: 100px;
+}
+.sponsors-container{
+	text-align: center;
+	width: 542px;
+	margin: 0px auto;
+}
+.sponsors-img-container{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin-top: 50px;
+	gap: 100px;
+}
+/* footer */
+footer{
+    max-width: 1440px;
+    height: 100px;
+    border-radius: 8px;
+    background: #FFF4E7;
+	margin: 200px auto;
+	text-align: center;
+}
+.footer-description{	
+padding-top: 30px;
+    border-radius: 8px;
+    background: #FFF4E7;
+	margin: 200px auto;
+	text-align: center;
+	width:100%;
+}
 
 
 
@@ -188,8 +222,10 @@ main{
 	align-items: center;
 	}
 
-	.collages-img{
+	.collages-img,
+	.sponsors-img-container{
 	grid-template-columns: 1fr;
+	justify-items: center;
 	}
 	.features-container{	
 	gap: 0px;
@@ -201,6 +237,12 @@ main{
 .ten-years-badge{
 	position: static;
 	max-width: 300px;
+}
+.sponsors-container{
+	max-width: 300px;
+}
+footer{
+	margin: 0px;
 }
 }
 @media screen and (min-width: 576px) and (max-width: 990px){
@@ -217,13 +259,19 @@ main{
 		align-items: center;
 	}
 
-	.collages-img{
+	.collages-img,
+	.sponsors-img-container{
 	grid-template-columns: 1fr;
+	justify-items: center;
 	}
 .features-container{
 	gap: 0px;
 }
 .features-img img{
+	width: 100%;
+}
+footer{
+	margin-right: 0px;
 	width: 100%;
 }
 	
